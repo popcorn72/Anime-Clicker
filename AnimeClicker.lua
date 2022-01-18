@@ -88,39 +88,3 @@ Teleport.Font = Enum.Font.SourceSans
 Teleport.Text = "Teleport"
 Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
 Teleport.TextSize = 14.000
-
-Close.Name = "Close"
-Close.Parent = main
-Close.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-Close.Position = UDim2.new(0.905914009, 0, 0, 0)
-Close.Size = UDim2.new(0, 35, 0, 31)
-Close.Font = Enum.Font.SourceSans
-Close.Text = "X"
-Close.TextColor3 = Color3.fromRGB(255, 0, 0)
-Close.TextSize = 52.000
-Close.MouseButton1Down:connect(function()
-main.Visible = false
-openmain.Visible = true
-end)
-
-openmain.Name = "openmain"
-openmain.Parent = ScreenGui
-openmain.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
-openmain.Position = UDim2.new(0, 0, 0.903225839, 0)
-openmain.Size = UDim2.new(0, 100, 0, 36)
-openmain.Active = true
-openmain.Draggable = true
-
-open.Name = "open"
-open.Parent = openmain
-open.BackgroundColor3 = Color3.fromRGB(164, 255, 240)
-open.Position = UDim2.new(0, 0, -0.027777791, 0)
-open.Size = UDim2.new(0, 100, 0, 36)
-open.Font = Enum.Font.SourceSans
-open.Text = "open"
-open.TextColor3 = Color3.fromRGB(0, 0, 0)
-open.TextSize = 14.000
-open.MouseButton1Down:connect(function()
-openmain.Visible = false
-main.Visible = true
-end)
