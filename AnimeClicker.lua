@@ -37,7 +37,7 @@ AnimeVillage.MouseButton1Down:connect(function()
 		[1] = "world",
 		[2] = "Anime Village"
 	}
-
+	print("teleported")
 	game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(unpack(args))
 
 end)
@@ -56,7 +56,7 @@ PirateDocks.MouseButton1Down:connect(function()
 		[1] = "world",
 		[2] = "Pirate Docks"
 	}
-
+	print("teleported")
 	game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(unpack(args))
 
 end)
@@ -74,7 +74,7 @@ PurpleForest.MouseButton1Down:connect(function()
 		[1] = "world",
 		[2] = "Purple Forest"
 	}
-
+	print("teleported")
 	game:GetService("ReplicatedStorage").Remotes.RequestTeleport:InvokeServer(unpack(args))
 
 end)
