@@ -1,8 +1,3 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local AnimeVillage = Instance.new("TextButton")
@@ -88,3 +83,41 @@ Teleport.Font = Enum.Font.SourceSans
 Teleport.Text = "Teleport"
 Teleport.TextColor3 = Color3.fromRGB(255, 255, 255)
 Teleport.TextSize = 14.000
+
+Close.Name = "Close"
+Close.Parent = main
+Close.BackgroundColor3 = Color3.new(1, 0, 0)
+Close.Position = UDim2.new(0.879518092, 0, 0, 0)
+Close.Size = UDim2.new(0, 40, 0, 31)
+Close.Font = Enum.Font.GothamBlack
+Close.Text = "X"
+Close.TextColor3 = Color3.new(0, 0, 0)
+Close.TextScaled = true
+Close.TextSize = 14
+Close.TextWrapped = true
+Close.MouseButton1Down:connect(function()
+	main.Visible = false
+	openmain.Visible = true
+end)
+
+openmain.Name = "openmain"
+openmain.Parent = ScreenGui
+openmain.BackgroundColor3 = Color3.new(1, 1, 1)
+openmain.Position = UDim2.new(0.00801973976, 0, 0.423832953, 0)
+openmain.Size = UDim2.new(0, 100, 0, 28)
+openmain.Active = true
+openmain.Draggable = true
+
+open.Name = "open"
+open.Parent = openmain
+open.BackgroundColor3 = Color3.new(1, 0, 0)
+open.Size = UDim2.new(0, 100, 0, 28)
+open.Font = Enum.Font.GothamBold
+open.Text = "OPEN"
+open.TextColor3 = Color3.new(0, 0, 0)
+open.TextSize = 18
+open.TextWrapped = true
+open.MouseButton1Down:connect(function()
+	openmain.Visible = false
+	main.Visible = true
+end)
