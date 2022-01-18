@@ -1,8 +1,4 @@
--- Gui to Lua
--- Version: 3.2
-
--- Instances:
-
+--Made by popcorn :)
 local ScreenGui = Instance.new("ScreenGui")
 local main = Instance.new("Frame")
 local AnimeVillage = Instance.new("TextButton")
